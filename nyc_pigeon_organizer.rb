@@ -1,11 +1,8 @@
 require 'pry'
 def nyc_pigeon_organizer(data)
   data.each_with_object({}) { |(k1_cat, v1_cathash), name_hash |
-    #binding.pry
     v1_cathash.each { | k2_catval, v2_namearr |
-      #binding.pry
       v2_namearr.each { |v3_name|
-        #binding.pry
         if !name_hash[v3_name]
           name_hash[v3_name] = {}
         end
